@@ -79,6 +79,9 @@ class ConfigSerializer(base.ModelSerializer):
             'ga_code'                           : _use_config,
             'enable_unique_workflow_defaults'   : _use_config,
             'enable_beta_markdown_export'       : _use_config,
+            'simplified_workflow_run_ui'        : _use_config,
+            'simplified_workflow_run_ui_target_history': _use_config,
+            'simplified_workflow_run_ui_job_cache': _use_config,
             'has_user_tool_filters'             : _defaults_to(False),
             # TODO: is there no 'correct' way to get an api url? controller='api', action='tools' is a hack
             # at any rate: the following works with path_prefix but is still brittle
@@ -105,6 +108,7 @@ class ConfigSerializer(base.ModelSerializer):
             'python'                            : _defaults_to((sys.version_info.major, sys.version_info.minor)),
             'select_type_workflow_threshold'    : _use_config,
             'file_sources_configured'           : lambda config, key, **context: self.app.file_sources.custom_sources_configured,
+            'upload_from_form_button'           : _use_config,
         }
 
 
