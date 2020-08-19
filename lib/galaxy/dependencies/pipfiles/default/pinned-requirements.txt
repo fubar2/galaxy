@@ -23,7 +23,7 @@ bagit==1.7.0
 bcrypt==3.1.7
 bdbag==1.5.6
 beaker==1.11.0
-bioblend==0.13.0
+bioblend
 bleach==3.1.5
 boltons==20.2.0
 boto3==1.9.114
@@ -57,10 +57,11 @@ fabric3==1.14.post1
 future==0.18.2
 futures==3.1.1
 galaxy-sequence-utils==1.1.5
+galaxyxml
 google-api-python-client==1.7.8
 google-auth-httplib2==0.0.3
 google-auth==1.18.0
-gxformat2==0.11.3
+gxformat2
 h5py==2.10.0
 httplib2==0.18.1
 humanfriendly==8.2
@@ -115,6 +116,7 @@ pastedeploy==2.1.0
 pastescript==3.2.0
 pathlib2==2.3.5 ; python_version < '3.6'
 pbr==5.4.5
+planemo
 prettytable==0.7.2
 prov==1.5.1
 psutil==5.7.0
