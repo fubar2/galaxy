@@ -116,7 +116,6 @@ pastedeploy==2.1.0
 pastescript==3.2.0
 pathlib2==2.3.5 ; python_version < '3.6'
 pbr==5.4.5
-planemo
 prettytable==0.7.2
 prov==1.5.1
 psutil==5.7.0
