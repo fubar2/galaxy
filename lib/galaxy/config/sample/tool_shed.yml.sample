@@ -41,7 +41,7 @@ uwsgi:
 
   # Path to the application's Python virtual environment. If using Conda
   # for Galaxy's framework dependencies (not tools!), do not set this.
-  virtualenv: .venv
+  virtualenv: /galaxy_venv
 
   # Path to the application's Python library.
   pythonpath: lib
@@ -185,7 +185,7 @@ tool_shed:
   # with the shell command:   python -c 'from __future__ import
   # print_function; import time; print(time.time())' | md5sum | cut -f 1
   # -d ' '
-  #id_secret: changethisinproductiontoo
+  id_secret: somethingelsefromthe---providedone--anytingwildew
 
   # User authentication can be delegated to an upstream proxy server
   # (usually Apache).  The upstream proxy should set a REMOTE_USER
@@ -233,7 +233,7 @@ tool_shed:
   # Tool Shed users (email addresses).  These users will have access to
   # the Admin section of the server, and will have access to create
   # users, groups, roles, libraries, and more.
-  #admin_users: null
+  admin_users: admin@galaxy.org
 
   # Force everyone to log in (disable anonymous access)
   #require_login: false
@@ -356,7 +356,7 @@ tool_shed:
   #email_domain_allowlist_file: null
 
   # Append "/{brand}" to the "Galaxy" text in the masthead.
-  #brand: null
+  brand: ToolFactory ToolShed 
 
   # Citation related caching.  Tool citations information maybe fetched
   # from external sources such as https://doi.org/ by Galaxy - the
